@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/newsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="News Heading"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis felis vel lorem rhoncus, luctus aliquet odio mattis. Vestibulum congue posuere porttitor. Etiam in mattis erat. Cras facilisis varius bibendum. Morbi malesuada diam non tellus commodo vestibulum. Suspendisse et pellentesque lectus, eget commodo enim. Pellentesque ac odio ac neque sagittis porttitor et non magna. Nulla aliquet placerat metus in feugiat. Praesent quis diam varius, imperdiet sapien a, sagittis dui. Aenean congue dictum dapibus. Praesent dignissim ut quam quis bibendum. \n\n Vivamus tincidunt, risus ut pellentesque pulvinar, justo turpis tempus ipsum, sit amet feugiat diam orci id nibh. Suspendisse potenti. Cras aliquam consectetur sapien vel maximus. Morbi faucibus est id lobortis dignissim. Ut vel odio cursus, volutpat sapien et, porttitor ipsum. Integer tincidunt ipsum ac felis viverra, ac euismod enim ornare. Praesent ut pharetra mi, sit amet tincidunt arcu. Integer at ornare odio, et feugiat neque. Morbi malesuada ipsum nec arcu sagittis vulputate. Proin finibus sed sapien in sodales. Donec posuere erat id elit ultricies molestie. Aenean et convallis odio, in bibendum orci. Praesent tincidunt aliquam urna viverra blandit. Ut arcu turpis, aliquet ut molestie non, blandit quis metus.    "
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsHeading" />
+</androidx.constraintlayout.widget.ConstraintLayout>

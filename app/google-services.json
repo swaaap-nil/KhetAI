@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "692583443111",
+    "project_id": "khetai-cd307",
+    "storage_bucket": "khetai-cd307.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692583443111:android:a5f562db8601f6101c4982",
+        "android_client_info": {
+          "package_name": "com.example.khetai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692583443111-5qna9m1e075adqn5cmehu3qrgsqjvjpi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.khetai",
+            "certificate_hash": "0de8b43fe0ec89c305bf1911db575ecfc0b4c01a"
+          }
+        },
+        {
+          "client_id": "692583443111-h2mta4papcu1bsl3et8klhqi2ep7paq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWH546nW4oGCrvczwUWCth9YerSEUlAyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692583443111-h2mta4papcu1bsl3et8klhqi2ep7paq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

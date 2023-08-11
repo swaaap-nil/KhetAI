@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NameAndLoginActivity1">
+
+
+
+
+    <TextView
+        android:id="@+id/textView_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/poppins"
+        android:text="Enter OTP"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText_otp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_getStartedFirstPage"
+        app:layout_constraintStart_toStartOf="@+id/textView_contact" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_verifyOTP"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/green"
+        android:elevation="1dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Verify OTP"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_otp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editText_otp"
+        app:layout_constraintTop_toTopOf="@+id/textView_contact"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <ImageView
+        android:id="@+id/tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_check_24"
+        android:elevation="5dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_verifyOTP"
+        app:layout_constraintEnd_toEndOf="@+id/btn_verifyOTP"
+        app:layout_constraintStart_toStartOf="@+id/btn_verifyOTP"
+        app:layout_constraintTop_toTopOf="@+id/btn_verifyOTP" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_getStartedFirstPage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/green"
+        android:enabled="false"
+        android:fontFamily="@font/poppins"
+        android:text="Get Started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:text="Use Light Mode only for now."
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_getStartedFirstPage" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="214dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_ps" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/farmer_holding_phone"
+        app:tintMode="add" />
+
+    <ProgressBar
+        android:id="@+id/verify_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_verifyOTP"
+        app:layout_constraintEnd_toEndOf="@+id/btn_verifyOTP"
+        app:layout_constraintStart_toStartOf="@+id/btn_verifyOTP"
+        app:layout_constraintTop_toTopOf="@+id/btn_verifyOTP" />
+
+    <ProgressBar
+        android:id="@+id/getStarted_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:indeterminate="true"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_getStartedFirstPage"
+        app:layout_constraintEnd_toEndOf="@+id/btn_getStartedFirstPage"
+        app:layout_constraintTop_toTopOf="@+id/btn_getStartedFirstPage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
